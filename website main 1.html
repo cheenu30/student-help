@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Help Portal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <script src="C:\Program Files\nodejs\node_modules\npm"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="logo1.svg" alt="Student Help Portal Logo" width="auto" height="auto">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#FAQ">FAQ</a></li>
+        <li><a href="#ticket">Raise a Ticket</a></li>
+        <li><a href="#Documents">Important Documents</a></li>
+        <li><a href="#Updates">Updates</a></li>
+        <li><a href="#">Contact Us</a></li> <!-- New menu item -->
+      </ul>
+    </nav>
+      <div class="background"></div>
+      <div class="hero">
+      <h1>Welcome to Student Help Portal.</h1>
+      <p>We are here to assist you with any academic, administrative, or technical issues that you may face. Our goal is to make your student life easy and stress-free.</p>
+      <a href="#" class="cta">Raise a Ticket</a>
+  </div>
+  </header>
+  <main>
+    <div class="faq">
+      <h2>FAQs</h2>
+      <div class="faq-header">
+      <input type="text" id="search" placeholder="Type your question here...">
+      <div class="faq-info">
+      <p>Acciojob provides a one step platform to all your Queries.<br> you can ask any Academic, course or placement related Question.</p>
+      </div>
+      </div>
+      <ul id="question-list"></ul>
+    </div>
+    <button id="openFormBtn">Open Form</button>
+   <div id="formWrapper" style="display: none;">
+  <section class="ticket">
+    <section id="ticket"></section>
+    <h2>Raise a Ticket</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="issue">Issue</label>
+      <textarea id="issue" name="issue" required></textarea>
+      <input type="submit" value="Submit">
+    </form>
+    <button id="closeFormBtn">Close</button>
+  </section>
+</div>
+    <section class="documents">
+      <section id="Documents"></section>
+      <h2>Important Documents</h2>
+      <ul>
+        <li><a href="#">Academic Calendar</a></li>
+        <li><a href="#">Student Handbook</a></li>
+        <li><a href="#">Library Resources</a></li> <!-- New document item -->
+      </ul>
+    </section>
+    <section class="updates">
+      <section id="Updates"></section>
+      <h2>Updates</h2>
+      <ul>
+        <li>
+          <h3>Spring Semester Orientation</h3>
+          <p>We are excited to announce the launch of our new online learning platform, which will provide you with access to course materials, assignments, and online discussions.</p>
+        </li>
+        <li>
+          <h3>Campus Closure Due to Inclement Weather</h3>
+          <p>The campus will be closed on February 10th due to inclement weather. All classes and activities are canceled.</p>
+        </li>
+      </ul>
+    </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 Student Help Portal</p>
+      </footer>
+    </body>
+    </html>
